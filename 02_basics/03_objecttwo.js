@@ -21,7 +21,7 @@
 
     }
  }
- console.log(inst_User.fullname.username.fisrt_name);
+//  console.log(inst_User.fullname.username.fisrt_name);
 
  // object combine
 
@@ -38,7 +38,7 @@
 
 
 
- console.log(result);
+ //console.log(result);
 
  const user =[
     {
@@ -60,14 +60,56 @@
         id:1
     }
  ]
- console.log(user);
- console.log(facebookUser);
+//  console.log(user);
+//  console.log(facebookUser);
 
- console.log(Object.keys(facebookUser));
- console.log(Object.values(facebookUser));
- console.log(Object.entries(facebookUser));
+//  console.log(Object.keys(facebookUser));
+//  console.log(Object.values(facebookUser));
+//  console.log(Object.entries(facebookUser));
 
- console.log(facebookUser.hasownProperty('isloggedin'));
+ //console.log(facebookUser.hasownProperty('isloggedin'));
+
+
+ ///////////////destruct/////
+ //extract properties form an objcet and store them in variables......
+
+ const cousre ={
+
+    cousrename :"js",
+    cousreprice :999,
+    cousreyear : "3months"
+
+ }
+
+ console.log(cousre.cousreyear);
+ const {cousreyear : year} = cousre
+ console.log(year);
+
+ 
+
+//  +++++++++++++++++++++++++API++++++++++++++++++(like menu cards)
+//two applications to communicate with each other 
+// request data and services.
+
+
+//json
+{
+"name" : "manisha",
+"age": 20,
+"isStudent":true
+  
+//key is also a string and same value is also a string in json
+
+}
+[
+    {},
+    {},
+    {}
+]
+
+
+
+
  
  
  
