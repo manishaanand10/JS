@@ -21,7 +21,7 @@ function sayMyName() {
 
 
 function AddTwoNumber( a, b){ //parametre
-    console.log(a + b);
+    // console.log(a + b);
 }
 AddTwoNumber(2,2) //agrument
 
@@ -30,12 +30,12 @@ function Add( a, b){ //parametre
    return a+b;
 }
 let result = Add(10,30);
-console.log(result);
+//console.log(result);
 
 
 //function declartion
 function greet(){
-    console.log("hello everyone" );
+    //console.log("hello everyone" );
     
 }
 greet();
@@ -43,10 +43,24 @@ greet();
 
 //parametre
 function greet(name){
-    console.log("hello everyone" + name);
+    // console.log("hello everyone" + name);
     
 }
-greet("manisha");//call to execute
+//greet("manisha");//call to execute
+
+
+// another function call
+function LoginUser(username){
+    if(!username ){ // true me value ayegi
+        console.log("username dal");
+        return   
+    }
+    return `${username} hello its me`
+}
+
+console.log(LoginUser());
+ // " "empty string is false ....  undefined is false 
+ //! true ko false me or false ko true me
 
 
 
