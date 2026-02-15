@@ -50,17 +50,37 @@ function greet(name){
 
 
 // another function call
-function LoginUser(username){
-    if(!username ){ // true me value ayegi
+function LoginUser(username ="manisha"){
+    if(!username ){   // true me value ayegi two way to re-present first is ! and seconf is username===undefined 
         console.log("username dal");
         return   
     }
     return `${username} hello its me`
 }
 
-console.log(LoginUser());
+//console.log(LoginUser());
  // " "empty string is false ....  undefined is false 
  //! true ko false me or false ko true me
+ // username ki value parametre me or argument me des saket hai
+
+
+
+
+ /////////////////function part 2///////////////////
+
+ //shopping cart user add the cart
+
+ function CalculateCartPrice(val1 ,val2, ...num1){ //...(rest operator/ spread operator)
+
+//rest operator collect multiple elements into one variable.
+    return num1
+
+ }
+ console.log(CalculateCartPrice(300,500,399, 1000))
+
+ 
+
+
 
 
 
