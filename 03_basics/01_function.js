@@ -79,9 +79,36 @@ function LoginUser(username ="manisha"){
  console.log(CalculateCartPrice(300,500,399, 1000))
 
  
+//object to function
+
+const user = {
+    name :"manisha",
+    age :20
+}
+
+function handleObject (anotherObject){
+    console.log(`username is ${anotherObject.name} ,and age is ${anotherObject.age}`);
+    
+
+}
+//handleObject(user)
+handleObject({ //direct object bhi pass ho sakta hai
+    name:"isha",
+    age:21
+})
 
 
+// array in object
 
+const sayMyArray =[1,2,3,4,5]
+
+function returnthirdValue(anotherarray){
+    return anotherarray[3]
+   
+
+}
+// console.log(returnSecondValue(sayMyArray));
+console.log(returnthirdValue([1,2,3,5,6,7,8]));
 
 
 
