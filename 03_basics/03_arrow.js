@@ -41,3 +41,21 @@ const apna = () => {
 }
 apna()
 
+// const addtwonumber = (num1,num2) =>{
+//     return num1+num2
+// }
+// console.log(addtwonumber(10,20))
+
+// second way to write arrow function syntax
+// const addtwonumber = (num1,num2) =>  num1+num2
+
+// const addtwonumber = (num1,num2) => (num1+num2)
+
+const addtwonumber = (num1,num2) => ({username:"mansiha"})
+
+
+console.log(addtwonumber(10,20))
+
+
+
+
