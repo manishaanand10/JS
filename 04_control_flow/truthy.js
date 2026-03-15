@@ -27,4 +27,17 @@ if(Object.keys(emptyobj).length === 0){
     
 }
 
+//NULISH COALSEING OPERATOR (??):NULL UNDERFINFED
+
+let val1
+// val1 = 5?? 10
+// val1 = null ?? 10
+// val1 =undefined?? 10
+val1 =null ?? 7 ?? 10
+console.log(val1);
+
+//TERNINAR OPERATOR
+
+const parkprice = 200
+parkprice <=100?console.log("less then 100") : console.log("more then 100");
 
