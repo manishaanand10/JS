@@ -17,8 +17,4 @@ for (const key in myobject) {
 
 const arr =["manisha","isha", "micki","aksha"]
 for (const key in arr) {
-    console.log(arr[key]);
-    
-    
-    
-}
+  console.log(arr[key]);  }
