@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM(remove element)</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <ul class="language">
+        <li>javascrpit</li>
+        <li>html</li>
+    </ul>
+    
+</body>
+<script>
+    function addlang(langname){
+       const li = document.createElement ('li')
+       li.innerHTML =(`${langname}`)
+       const addtext = document.querySelector('.language')
+       addtext.appendChild(li)
+        
+    }
+    addlang("python")
+    addlang("java")
+
+    function addoptilang(langname){
+        const li= document.createElement('li')
+        const addtext = document.createTextNode(langname)
+        li.appendChild(addtext)
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptilang('golang')
+
+    //edit
+    const threevalueedit = document.querySelector("li:nth-child(3)")
+    // console.log(threevalueedit);
+    //  threevalueedit.innerHTML="html"
+    const neweditli =document.createElement('li')
+    neweditli.textContent='cpp'
+    threevalueedit.replaceWith(neweditli)
+
+
+    //edit anothername
+    const firstvalue = document.querySelector('li:first-child')
+    // console.log(firstvalue);
+    firstvalue.outerHTML='<li>css</li>'
+    
+
+    //remove element
+    const lastlang =document.querySelector('li:last-child')
+    lastlang.remove()
+
+    const firstlang=document.querySelector("li:first-child")
+    firstlang.remove()
+
+
+
+    
+
+
+
+
+</script>
+</html>
