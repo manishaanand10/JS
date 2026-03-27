@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT(img)</title>
+</head>
+<body style="background-color: rgb(51, 49, 49); color: white;" >
+    <h1>PHOTO SHOP</h1>
+    <div>
+        <ul id="images">
+          <li><img width="200px" id="vegphoto" src="./veg.jpg" alt="veg"></li> 
+          <li><img width="200px" id="nonvegphoto" src="./nonveg.jpg" alt="nonveg"></li> 
+          <li><img width="200px" id="fastfoodphoto" src="./fastfood.jpg" alt="fastfood" onclick="alert('fastfood')"></li> 
+          <li><a style="color: green
+           " href="https://www.google.com/" id="google">GOOGLE</a></li>
+        </ul>
+    </div>  
+</body>
+<script>
+    //attachEvent() 
+    //jQuery-on
+    // document.getElementById('vegphoto').onclick=function(){
+    //     alert("veg clicked")
+    // }
+    //type,timestamp,defaultPrevented
+    // target,toElement
+    //scrElement,currentTarget
+    //clientX,clientY,screenX,screenY
+    //altkey,ctrlkey,shiftkey,keycode
+    
+
+    // document.getElementById('vegphoto').addEventListener('click', function(event){
+    //     console.log(event);    
+    // },false)// default value
+
+    // document.getElementById('images').addEventListener('click' , function(event){
+    //     console.log('clicked inside the ul');
+    // },false)
+
+    // document.getElementById('nonvegphoto').addEventListener('click' , function(event){
+    //     console.log('nonvegphoto clicked');
+    //     event.stopPropagation()
+    // },false)
+
+    // document.getElementById('google').addEventListener('click',function(event){
+    //     event.preventDefault()
+    //     console.log("google clicked");
+    // },false)
+
+    //project
+
+    document.querySelector('#images').addEventListener('click',function(event){
+        console.log(event.target.tagName);
+        if (event.target.tagName === 'IMG') {
+            console.log(event.target.id);
+            let removeElement = event.target.parentNode
+            removeElement.remove()    
+        }
+      
+    },false)
+
+     // second remove method in image 
+        // removeElement.parentNode.removeChild(removeElement)
+
+    //  console.log(event.target.tagName);
+        
+
+
+
+
+    
+    
+
+</script>
+
+</html>
