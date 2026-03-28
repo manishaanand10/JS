@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT</title>
+</head>
+<body>
+    <h1>EVENT IN JAVASCRIPT</h1>
+    <button id="clear">clear</button>
+</body>
+<script>
+    const saymyname = function(){
+    console.log('hey everyone my name is manisha');
+}
+
+     const changeName = function(){
+        document.querySelector('h1').innerHTML ="hey javascript"
+     }
+    
+    const changeMe = setTimeout(changeName,2000)
+
+    document.querySelector('#clear').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED");
+        
+    })
+    
+
+  
+
+   
+</script>
+</html>
