@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT</title>
+</head>
+<body>
+    <h1>EVENT IN JS</h1>
+    <button id="stop">STOP</button>
+    <button id="start">START</button>
+    
+</body>
+<script>
+    //setInterval run repeatedly
+    const setint = function(){
+        console.log('today date',Date.now())
+    }
+
+    
+    document.querySelector('#start').addEventListener('click',function(){
+        console.log("startttttttttt");
+        setInterval(setint,1000)
+        
+    },false)
+
+
+    const stop = setInterval(setint,1000)
+    document.querySelector('#stop').addEventListener('click',function(){
+        console.log("stopped");
+        clearInterval(stop)
+       
+    },false)
+
+   
+</script>
+</html>
