@@ -46,34 +46,70 @@ const student1 = new student('mansiha','20')
 
 
 // inhertacnce
-class mobile{
-    constructor(brand){
-        this.brand=brand;
-        // this.price=price;
+// class mobile{
+//     constructor(brand){
+//         this.brand=brand;
+//         // this.price=price;
+//     }
+
+//     details(){
+//         return `brand name is  ${this.brand}`
+//     }
+    
+// }
+
+//  class phone extends mobile{
+//     constructor(brand,price,year){
+//        super(brand)
+//         this.price=price;
+//         this.year=year
+
+//     }
+
+//     addname(){
+//         return` name of barnd ${this.brand}`
+//     }
+
+
+//  }
+
+// const cellphone= new phone('apple','20k','2000')
+// console.log(cellphone.addname());
+
+// const anotherphone =  new mobile('oppo')
+// anotherphone.addname()
+// // anotherphone.mobile()
+// // cellphone.details
+
+
+class user{
+    constructor(username){
+        this.username =username
     }
 
-    details(){
-        return `brand name is  ${this.brand}`
+    logme(){
+        console.log(`username is ${this.username}`);
+        
     }
-    
 }
 
- class phone extends mobile{
-    constructor(brand,price,year){
-       super(brand)
-        this.price=price;
-        this.year=year
-
+class anotheruser extends user{
+    constructor(username,email,password){
+        super(username)
+        this.email=email;
+        this.password=password;
     }
-
-    addname(){
-        return` name of barnd${this.brand}`
+    callme(){
+        console.log(`add more value like email=${this.email} and password=${this.password}`);
+        
     }
-
-
- }
-
-const cellphone= new phone('apple','20k','2000')
-console.log(cellphone.addname());
-
-
+}
+ const chai=new anotheruser("manisha","mansihaanand@123","12345")
+chai.logme()
+chai.callme()
+const anotherchai = new user('isha')
+anotherchai.logme()
+// anotherchai.callme()
+console.log(chai=== anotherchai);// false
+console.log(chai=== anotheruser);// false
+console.log(chai instanceof anotheruser);// true
